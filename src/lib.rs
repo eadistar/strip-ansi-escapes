@@ -167,9 +167,9 @@ where
     }
     fn execute(&mut self, byte: u8) {
         // We only care about executing linefeeds.
-        if byte == b'\n' {
-            self.err = writeln!(self.writer).err();
-        }
+        // if byte == b'\n' {
+        //     self.err = writeln!(self.writer).err();
+        // }
     }
 }
 
